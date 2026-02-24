@@ -2,13 +2,14 @@
     ********** PART 1 **********
 */
 // For this section, use JS to select the element here by its ID and add to the innerHTML a span with a class of "tan" and text inside that span that says "This is new tan text"
-// TO DO
+document.getElementById("firstPara").innerHTML += " <span class='tan'>This is new tan text</span>"
 
 /*
     ********** PART 2 **********
 */
 // For this section, select all of these images and change their width from its current setting to 250 pixels
-// TO DO
+let images = document.getElementsByTagName("img");
+console.log(images);
 
 /*
     ********** PART 3 **********
