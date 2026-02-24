@@ -11,11 +11,24 @@ document.getElementById("firstPara").innerHTML += " <span class='tan'>This is ne
 let images = document.getElementsByTagName("img");
 console.log(images);
 
+for(let img of images){
+    img.width = "250";
+}
+
 /*
     ********** PART 3 **********
 */
 // For the elements below, there are two class names. You will need to select the groups of elements separately, and for the elements with the class "med-blue", add inline styles to change the text color to #3C5E73. For the elements with the class "light-blue" change the text color to #7C9EA6. You can access the inline styles for an element with the dot operator (.) and the attribute name "style" followed by another dot and the style you want to set (in this case, element.style.color).
-// TO DO
+let ltBlueSpans = document.getElementsByClassName("light-blue");
+let medBlueSpans = document.getElementsByClassName("med-blue");
+
+for(let span of ltBlueSpans){
+    span.style.color = "#7C9EA6";
+}
+
+for(let span of medBlueSpans){
+    span.style.color = "#3C5E73";
+}
 
 /*
     ********** PART 4 **********
